@@ -8,6 +8,7 @@ import "firebase/storage";
 import Profile from "./Pages/Profile";
 import Login from "./Login";
 import Feed from "./Pages/Feed";
+import Header from "./components/Header";
 
 import "./styles.css";
 import { auth, db } from "./firebaseConfig";
@@ -50,7 +51,7 @@ const App = () => {
     <div className="container" style={{ backgroundColor: "lightblue" }}>
       <div className="logo-container" style={{ backgroundColor: "lightgreen" }}>
         <img src={uploadLogo} alt="Upload Logo" className="logo" />
-        <h2 className="heading">Upload your photos here</h2>
+        <Header text="Upload your photos here" />
       </div>
 
       <Routes>
